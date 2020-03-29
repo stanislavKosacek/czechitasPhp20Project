@@ -4,7 +4,7 @@
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
             <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
                 <div class="text text-center">
-                    <span class="subheading">Hey! I am</span>
+                    <span class="subheading"><?= preloz("hlavicka.ahoj");?></span>
                     <h1>
                         <? echo $celeJmeno; ?>
                     </h1>
@@ -19,8 +19,7 @@
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-5">
 				<div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">Our Blog</h2>
+					<h2 class="mb-4">My Blog</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 				</div>
 			</div>

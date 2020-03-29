@@ -20,11 +20,11 @@ $sluzby = [
 ];
 
 $menu = [
-    ["text" => "Domů", "controller" => "domu", "kotva" => "#home-section"],
-    ["text" => "O mně", "controller" => "domu", "kotva" => "#about-section"],
-    ["text" => "Souhrn", "controller" => "domu", "kotva" => "#resume-section"],
-    ["text" => "Služby", "controller" => "domu", "kotva" => "#services-section"],
-    ["text" => "Kontakt", "controller" => "kontakt", "kotva" => ""],
-    ["text" => "Galerie", "controller" => "galerie", "kotva" => ""],
-    ["text" => "Blog", "controller" => "blog", "kotva" => ""],
+    ["text" => "domu", "controller" => "domu", "kotva" => "#home-section"],
+    ["text" => "o_mne", "controller" => "domu", "kotva" => "#about-section"],
+    ["text" => "souhrn", "controller" => "domu", "kotva" => "#resume-section"],
+    ["text" => "sluzby", "controller" => "domu", "kotva" => "#services-section"],
+    ["text" => "kontakt", "controller" => "kontakt", "kotva" => ""],
+    ["text" => "galerie", "controller" => "galerie", "kotva" => ""],
+    ["text" => "blog", "controller" => "blog", "kotva" => ""],
 ];

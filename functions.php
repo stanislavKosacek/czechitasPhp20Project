@@ -32,7 +32,7 @@ function sestavHlavniMenu(array $menu, string $controllerNazev): string
         } else {
             $odkaz = "?stranka=" . $polozkaMenu["controller"] . $polozkaMenu["kotva"];
         }
-        $htmlMenu .= "<li class=\"nav-item\"><a href=\"" . $odkaz . "\" class=\"nav-link\"><span>" . $polozkaMenu["text"] . "</span></a></li>";
+        $htmlMenu .= "<li class=\"nav-item\"><a href=\"" . $odkaz . "\" class=\"nav-link\"><span>" . preloz("menu." . $polozkaMenu["text"]) . "</span></a></li>";
     }
 
     return $htmlMenu;
@@ -48,7 +48,7 @@ function sestavVedlejsiMenu(array $menu, string $controllerNazev): string
         } else {
             $odkaz = "?stranka=" . $polozkaMenu["controller"] . $polozkaMenu["kotva"];
         }
-        $htmlMenu .= "<li><a href=\"" . $odkaz . "\"><span class=\"icon-long-arrow-right mr-2\"></span>" . $polozkaMenu["text"] . "</a></li>";
+        $htmlMenu .= "<li><a href=\"" . $odkaz . "\"><span class=\"icon-long-arrow-right mr-2\"></span>" . preloz("menu." . $polozkaMenu["text"]) . "</a></li>";
     }
 
     return $htmlMenu;
@@ -57,5 +57,5 @@ function sestavVedlejsiMenu(array $menu, string $controllerNazev): string
 
 function preloz(string $prekladovyRetezec): string
 {
-    return $prekladovyRetezec;
+    return TEXTY[$prekladovyRetezec] ?? $prekladovyRetezec;
 }

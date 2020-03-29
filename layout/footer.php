@@ -3,7 +3,7 @@
         <div class="row mb-5">
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">About</h2>
+                    <h2 class="ftco-heading-2"><?= preloz("paticka.o_mne");?></h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                         there live the blind texts.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
@@ -15,7 +15,7 @@
             </div>
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Links</h2>
+                    <h2 class="ftco-heading-2"><?= preloz("paticka.odkazy");?></h2>
                     <div id="ftco-nav">
                         <ul class="list-unstyled">
                             <?= sestavVedlejsiMenu($menu, $controllerNazev);?>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Services</h2>
+                    <h2 class="ftco-heading-2"><?= preloz("paticka.sluzby");?></h2>
                     <ul class="list-unstyled">
                         <?php
                         foreach ($sluzby as $sluzba) {
@@ -40,7 +40,7 @@
             </div>
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <h2 class="ftco-heading-2"><?= preloz("paticka.mate_otazku");?></h2>
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">

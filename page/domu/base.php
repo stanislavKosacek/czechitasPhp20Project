@@ -4,9 +4,9 @@
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
-						<span class="subheading">Hey! I am</span>
+						<span class="subheading"><?= preloz("hlavicka.ahoj");?></span>
 						<h1><?= $celeJmeno;?></h1>
-						<h2>I'm a
+						<h2><?= preloz("hlavicka.ja_jsem");?>
 							<span class="txt-rotate" data-period="2000"
 								data-rotate='[<?= vypisJaJsem($schopnosti);?>]'></span>
 						</h2>
@@ -36,16 +36,14 @@
 				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
+							<h2 class="mb-4"><?= preloz("domu.o_mne.nadpis");?></h2>
+							<p><?= preloz("domu.o_mne.popis");?></p>
 							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span><?= $celeJmeno;?></span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span><?= $datumNarozeni;?></span></li>
-								<li class="d-flex"><span>Address:</span> <span><?= $adresa;?></span></li>
-								<li class="d-flex"><span>Email:</span> <span><?= $email;?></span></li>
-								<li class="d-flex"><span>Phone: </span> <span><?= $telefon;?></span></li>
+								<li class="d-flex"><span><?= preloz("domu.o_mne.jmeno");?>:</span> <span><?= $celeJmeno;?></span></li>
+								<li class="d-flex"><span><?= preloz("domu.o_mne.datum_narozeni");?>:</span> <span><?= $datumNarozeni;?></span></li>
+								<li class="d-flex"><span><?= preloz("domu.o_mne.adresa");?>:</span> <span><?= $adresa;?></span></li>
+								<li class="d-flex"><span><?= preloz("domu.o_mne.email");?>:</span> <span><?= $email;?></span></li>
+								<li class="d-flex"><span><?= preloz("domu.o_mne.telefon");?>: </span> <span><?= $telefon;?></span></li>
 							</ul>
 						</div>
 					</div>
@@ -69,15 +67,15 @@
 				<div class="col-md-3">
 					<nav id="navi">
 						<ul>
-							<li><a href="#page-1">Education</a></li>
-							<li><a href="#page-2">Experience</a></li>
-							<li><a href="#page-3">Skills</a></li>
+							<li><a href="#page-1"><?= preloz("domu.souhrn.vzdelani");?></a></li>
+							<li><a href="#page-2"><?= preloz("domu.souhrn.zkusenosti");?></a></li>
+							<li><a href="#page-3"><?= preloz("domu.souhrn.schopnosti");?></a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="col-md-9">
 					<div id="page-1" class="page one">
-						<h2 class="heading">Education</h2>
+						<h2 class="heading"><?= preloz("domu.souhrn.vzdelani");?></h2>
 						<?php
 						foreach ($vzdelani as $skola) {
 							?>
@@ -97,7 +95,7 @@
 					</div>
 
 					<div id="page-2" class="page two">
-						<h2 class="heading">Experience</h2>
+						<h2 class="heading"><?= preloz("domu.souhrn.zkusenosti");?></h2>
 
 						<?php
 						foreach ($zamestnani as $prace) {
@@ -118,7 +116,7 @@
 						?>
 					</div>
 					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
+						<h2 class="heading"><?= preloz("domu.souhrn.schopnosti");?></h2>
 						<div class="row progress-circle mb-5">
 						<?php
 						foreach ($hlavniSchopnosti as $hlavniSchopnost) {
@@ -177,9 +175,8 @@
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-center py-5 mt-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<h2 class="mb-4"><?= preloz("domu.sluzby.nadpis");?></h2>
+					<p><?= preloz("domu.sluzby.popis");?></p>
 				</div>
 			</div>
 			<div class="row">
