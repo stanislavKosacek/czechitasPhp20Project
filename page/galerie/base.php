@@ -6,7 +6,7 @@
                 <div class="text text-center">
                     <span class="subheading"><?= preloz("hlavicka.ahoj");?></span>
                     <h1>
-                        <? echo $celeJmeno; ?>
+                        <?= $celeJmeno; ?>
                     </h1>
                     <h2>Galerie</h2>
                 </div>
