@@ -2,12 +2,13 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+session_start();
 
-$jazyk = $_GET['jazyk'] ?? 'cs';
+$jazyk = $_SESSION["jazyk"] ?? 'cs';
 
-$povoleneJazyky = ['cs', 'en'];
+$povoleneJazyky = ['cs' => "Čeština", 'en' => "English"];
 
-if (in_array($jazyk, $povoleneJazyky)) {
+if (array_key_exists($jazyk, $povoleneJazyky)) {
   require 'translate/' . $jazyk . '.php';
 } else {
   require 'translate/cs.php';

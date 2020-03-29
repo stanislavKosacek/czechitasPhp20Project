@@ -9,6 +9,19 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav nav ml-auto">
                 <?= sestavHlavniMenu($menu, $controllerNazev);?>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?= $povoleneJazyky[$jazyk]; ?>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <?php
+                            foreach ($povoleneJazyky as $key => $jazyk) {
+                                echo '<a class="dropdown-item" href="?stranka=jazyk&jazyk=' . $key . '&presmerovani=' . $controllerNazev . '" class="nav-link">' . $jazyk . '</a>';
+                            }
+                        ?>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
