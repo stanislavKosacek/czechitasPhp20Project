@@ -18,9 +18,7 @@
                     <h2 class="ftco-heading-2">Links</h2>
                     <div id="ftco-nav">
                         <ul class="list-unstyled">
-                            <?php
-                             echo sestavVedlejsiMenu($menu, $controllerNazev);
-                            ?>
+                            <?= sestavVedlejsiMenu($menu, $controllerNazev);?>
                         </ul>
                     </div>
                 </div>
@@ -33,7 +31,7 @@
                         foreach ($sluzby as $sluzba) {
                             ?>
                         <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>
-                                <?php echo $sluzba["sluzba"]; ?></a></li>
+                                <?= $sluzba["sluzba"]; ?></a></li>
                         <?php
                         }
                         ?>
@@ -46,13 +44,13 @@
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">
-                                    <?php echo $adresa; ?></span></li>
-                            <li><a href="tel:<?php echo $telefon; ?>"><span class="icon icon-phone"></span><span
+                                    <?= $adresa; ?></span></li>
+                            <li><a href="tel:<?= $telefon; ?>"><span class="icon icon-phone"></span><span
                                         class="text">
-                                        <?php echo $telefon; ?></span></a></li>
-                            <li><a href="mailto:<?php echo $email; ?>"><span class="icon icon-envelope"></span><span
+                                        <?= $telefon; ?></span></a></li>
+                            <li><a href="mailto:<?= $email; ?>"><span class="icon icon-envelope"></span><span
                                         class="text">
-                                        <?php echo $email; ?></span></a></span></a></li>
+                                        <?= $email; ?></span></a></span></a></li>
                         </ul>
                     </div>
                 </div>

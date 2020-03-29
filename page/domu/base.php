@@ -5,10 +5,10 @@
 				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
 						<span class="subheading">Hey! I am</span>
-						<h1><? echo $celeJmeno; ?></h1>
+						<h1><?= $celeJmeno;?></h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="2000"
-								data-rotate='[<? echo vypisJaJsem($schopnosti); ?>]'></span>
+								data-rotate='[<?= vypisJaJsem($schopnosti);?>]'></span>
 						</h2>
 					</div>
 				</div>
@@ -41,11 +41,11 @@
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span><? echo $celeJmeno; ?></span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span><? echo $datumNarozeni; ?></span></li>
-								<li class="d-flex"><span>Address:</span> <span><? echo $adresa; ?></span></li>
-								<li class="d-flex"><span>Email:</span> <span><? echo $email; ?></span></li>
-								<li class="d-flex"><span>Phone: </span> <span><? echo $telefon; ?></span></li>
+								<li class="d-flex"><span>Name:</span> <span><?= $celeJmeno;?></span></li>
+								<li class="d-flex"><span>Date of birth:</span> <span><?= $datumNarozeni;?></span></li>
+								<li class="d-flex"><span>Address:</span> <span><?= $adresa;?></span></li>
+								<li class="d-flex"><span>Email:</span> <span><?= $email;?></span></li>
+								<li class="d-flex"><span>Phone: </span> <span><?= $telefon;?></span></li>
 							</ul>
 						</div>
 					</div>
@@ -86,9 +86,9 @@
 									<span class="flaticon-ideas"></span>
 								</div>
 								<div class="text pl-3">
-									<span class="date"><? echo $skola["roky"];?></span>
-									<h2><? echo $skola["obor"];?></h2>
-									<span class="position"><? echo $skola["skola"];?></span>
+									<span class="date"><?= $skola["roky"];?></span>
+									<h2><?= $skola["obor"];?></h2>
+									<span class="position"><?= $skola["skola"];?></span>
 								</div>
 							</div>
 						<?php
@@ -107,10 +107,10 @@
 									<span class="flaticon-ideas"></span>
 								</div>
 								<div class="text pl-3">
-									<span class="date"><? echo $prace["roky"];?></span>
-									<h2><? echo $prace["pozice"];?></h2>
-									<span class="position"><? echo $prace["zamestnavatel"];?></span>
-									<p><? echo $prace["popis"];?></p>
+									<span class="date"><?= $prace["roky"];?></span>
+									<h2><?= $prace["pozice"];?></h2>
+									<span class="position"><?= $prace["zamestnavatel"];?></span>
+									<p><?= $prace["popis"];?></p>
 								</div>
 							</div>
 						<?php
@@ -125,10 +125,10 @@
 							?>
 							<div class="col-lg-4 mb-4">
 								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4"><? echo $hlavniSchopnost["schopnost"];?></h2>
+									<h2 class="h5 font-weight-bold text-center mb-4"><?= $hlavniSchopnost["schopnost"];?></h2>
 
 									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='<? echo $hlavniSchopnost["procenta"];?>'>
+									<div class="progress mx-auto" data-value='<?= $hlavniSchopnost["procenta"];?>'>
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
 										</span>
@@ -137,7 +137,7 @@
 										</span>
 										<div
 											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold"><? echo $hlavniSchopnost["procenta"];?><sup class="small">%</sup></div>
+											<div class="h2 font-weight-bold"><?= $hlavniSchopnost["procenta"];?><sup class="small">%</sup></div>
 										</div>
 									</div>
 									<!-- END -->
@@ -153,11 +153,11 @@
 									?>
 									<div class="col-md-6 animate-box">
 										<div class="progress-wrap ftco-animate">
-											<h3><? echo $vedlejsiSchopnost["schopnost"];?></h3>
+											<h3><?= $vedlejsiSchopnost["schopnost"];?></h3>
 											<div class="progress">
-												<div class="progress-bar color-1" role="progressbar" aria-valuenow="<? echo $vedlejsiSchopnost["procenta"];?>"
-													aria-valuemin="0" aria-valuemax="100" style="width:<? echo $vedlejsiSchopnost["procenta"];?>%">
-													<span><? echo $vedlejsiSchopnost["procenta"];?>%</span>
+												<div class="progress-bar color-1" role="progressbar" aria-valuenow="<?= $vedlejsiSchopnost["procenta"];?>"
+													aria-valuemin="0" aria-valuemax="100" style="width:<?= $vedlejsiSchopnost["procenta"];?>%">
+													<span><?= $vedlejsiSchopnost["procenta"];?>%</span>
 												</div>
 											</div>
 										</div>
@@ -192,8 +192,8 @@
 							<i class="flaticon-analysis"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5"><?echo $sluzba["sluzba"]; ?></h3>
-							<p><?echo $sluzba["popis"]; ?></p>
+							<h3 class="mb-5"><?= $sluzba["sluzba"]; ?></h3>
+							<p><?= $sluzba["popis"]; ?></p>
 						</div>
 					</div>
 				</div>

@@ -53,3 +53,9 @@ function sestavVedlejsiMenu(array $menu, string $controllerNazev): string
 
     return $htmlMenu;
 }
+
+
+function preloz(string $prekladovyRetezec): string
+{
+    return $prekladovyRetezec;
+}
