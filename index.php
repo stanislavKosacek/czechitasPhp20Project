@@ -1,7 +1,6 @@
 <?php
 require "bootstrap.php";
 
-
 $controllerNazev = $_GET['stranka'] ?? 'domu';
 $controllerSoubor = 'controller/' . $controllerNazev . '.php';
 
