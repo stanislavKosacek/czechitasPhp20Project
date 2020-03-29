@@ -13,6 +13,7 @@ if (in_array($jazyk, $povoleneJazyky)) {
   require 'translate/cs.php';
 }
 
+require 'config/connection.php';
 
-require "config/config.php";
 require "functions.php";
+require "config/config.php";
