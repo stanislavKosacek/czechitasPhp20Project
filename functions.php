@@ -21,3 +21,35 @@ function vypisLogo(string $jmeno): string
 
     return "<span>" . $prvniPismeno . "</span>" . $zbytekJmena;
 }
+
+
+function sestavHlavniMenu(array $menu, string $controllerNazev): string
+{
+    $htmlMenu = "";
+    foreach ($menu as $polozkaMenu) {
+        if ($controllerNazev == $polozkaMenu["controller"]) {
+            $odkaz = $polozkaMenu["kotva"];
+        } else {
+            $odkaz = "?stranka=" . $polozkaMenu["controller"] . $polozkaMenu["kotva"];
+        }
+        $htmlMenu .= "<li class=\"nav-item\"><a href=\"" . $odkaz . "\" class=\"nav-link\"><span>" . $polozkaMenu["text"] . "</span></a></li>";
+    }
+
+    return $htmlMenu;
+}
+
+
+function sestavVedlejsiMenu(array $menu, string $controllerNazev): string
+{
+    $htmlMenu = "";
+    foreach ($menu as $polozkaMenu) {
+        if ($controllerNazev == $polozkaMenu["controller"]) {
+            $odkaz = $polozkaMenu["kotva"];
+        } else {
+            $odkaz = "?stranka=" . $polozkaMenu["controller"] . $polozkaMenu["kotva"];
+        }
+        $htmlMenu .= "<li><a href=\"" . $odkaz . "\"><span class=\"icon-long-arrow-right mr-2\"></span>" . $polozkaMenu["text"] . "</a></li>";
+    }
+
+    return $htmlMenu;
+}
